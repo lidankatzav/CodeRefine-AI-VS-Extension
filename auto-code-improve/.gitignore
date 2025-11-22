@@ -1,0 +1,34 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+out/
+dist/
+*.vsix
+
+# TypeScript
+*.tsbuildinfo
+
+# VS Code workspace files
+.vscode/
+!.vscode/extensions.json
+
+# MacOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Backup
+*.bak
+*.tmp

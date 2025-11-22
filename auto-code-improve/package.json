@@ -1,0 +1,58 @@
+{
+  "name": "auto-code-improve",
+  "displayName": "Auto Code Improve",
+  "description": "Suggests improvements for code using a local LLM running on http://127.0.0.1:1234",
+  "version": "0.0.1",
+  "publisher": "lidan",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:auto-code-improve.suggestImprovements",
+    "onLanguage:python",
+    "onLanguage:typescript",
+    "onLanguage:javascript"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "auto-code-improve.suggestImprovements",
+        "title": "Auto Code Improve: Suggest Improvements",
+        "icon": "$(sparkle)"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "auto-code-improve.suggestImprovements",
+          "group": "navigation",
+          "when": "editorLangId =~ /(python|typescript|javascript)/"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "auto-code-improve.suggestImprovements",
+          "group": "navigation@9",
+          "when": "editorLangId =~ /(python|typescript|javascript)/"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.106.1",
+    "typescript": "^5.2.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
