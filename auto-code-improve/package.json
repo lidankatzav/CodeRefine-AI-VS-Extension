@@ -1,7 +1,7 @@
 {
-  "name": "auto-code-improve",
-  "displayName": "Auto Code Improve",
-  "description": "Suggests improvements for code using a local LLM running on http://127.0.0.1:1234",
+  "name": "coderefine-ai",
+  "displayName": "CodeRefine",
+  "description": "AI-powered code review and optimization tool that runs entirely on your local machine. Get instant suggestions for code improvements, refactoring, and best practices without sending your code to external servers.",
   "version": "0.0.1",
   "publisher": "lidan",
   "engines": {
@@ -21,7 +21,7 @@
     "commands": [
       {
         "command": "auto-code-improve.suggestImprovements",
-        "title": "Auto Code Improve: Suggest Improvements",
+        "title": "CodeRefine: Analyze Code",
         "icon": "$(sparkle)"
       }
     ],

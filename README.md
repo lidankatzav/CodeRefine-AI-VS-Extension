@@ -1,17 +1,18 @@
-# 🚀 Auto Code Improve — VS Code Extension
+# 🚀 CodeRefine AI — AI-Powered Code Review & Optimization
 
-A lightweight VS Code extension that analyzes your code and suggests improvements using a **local LLM**.  
-🔒 **100% Private** — No data is sent to the cloud. All processing happens locally on your machine.
+**CodeRefine AI** is a professional VS Code extension that provides AI-powered code analysis and improvement suggestions.  
+🔒 **100% Private & Local** — All processing happens on your machine. Your code never leaves your device.
 
 ---
 
 ## ✨ Features
 
-- 🔍 **Smart Code Analysis** — Analyzes your code and provides improvement suggestions
-- 🏠 **Fully Local** — Works with local LLM servers (LM Studio, Ollama, etc.)
-- 🎯 **Multi-Language Support** — Works with Python, TypeScript, and JavaScript
-- ⚡ **Quick Access** — Available via toolbar button or command palette
-- 📝 **Markdown Output** — Suggestions displayed in a formatted markdown document
+- 🔍 **Intelligent Code Analysis** — Deep analysis of your codebase with actionable improvement suggestions
+- 🏠 **Privacy-First Architecture** — Works with local LLM servers (LM Studio, Ollama, etc.) - no cloud dependencies
+- 🎯 **Multi-Language Support** — Optimized for Python, TypeScript, and JavaScript
+- ⚡ **Seamless Integration** — One-click access via toolbar, command palette, or context menu
+- 📝 **Professional Output** — Detailed suggestions formatted in markdown for easy review
+- 🛡️ **Enterprise-Ready** — Perfect for teams that require code privacy and security compliance
 
 ---
 
@@ -32,7 +33,7 @@ A lightweight VS Code extension that analyzes your code and suggests improvement
 4. Select the `.vsix` file
 
 ### Option 2: Development Installation
-1. Clone this repository
+1. Clone this repository: `git clone https://github.com/yourusername/coderefine-ai.git`
 2. Open the `auto-code-improve` folder in VS Code
 3. Run `npm install` to install dependencies
 4. Press `F5` to open a new Extension Development Host window
@@ -60,17 +61,17 @@ ollama serve
 
 **Method 1: Toolbar Button** 🎯
 1. Open any code file (Python, TypeScript, or JavaScript)
-2. Click the **"✨ Suggest Improvements"** button in the editor toolbar
+2. Click the **"✨ CodeRefine: Analyze Code"** button in the editor toolbar
 
 **Method 2: Command Palette** ⌨️
 1. Open any code file
 2. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac)
-3. Type "Auto Code Improve: Suggest Improvements"
+3. Type "CodeRefine: Analyze Code"
 4. Press Enter
 
 **Method 3: Right-Click Context Menu** 🖱️
 1. Right-click in your code editor
-2. Select "Auto Code Improve: Suggest Improvements"
+2. Select "CodeRefine: Analyze Code"
 
 ### Step 3: View Suggestions
 
@@ -135,7 +136,7 @@ auto-code-improve/
 
 ### Extension not appearing
 - ✅ Reload VS Code window (`Ctrl+R` / `Cmd+R`)
-- ✅ Check that the extension is activated (check Output → "Auto Code Improve")
+- ✅ Check that the extension is activated (check Output → "CodeRefine")
 - ✅ Ensure you're using a supported file type
 
 ### No suggestions received
@@ -147,7 +148,7 @@ auto-code-improve/
 
 ## 📝 License
 
-This project is open source and available for personal and educational use.
+This project is open source and available for personal and commercial use.
 
 ---
 
@@ -163,4 +164,10 @@ For questions or support, please open an issue on the repository.
 
 ---
 
-**Made with ❤️ for developers who value privacy and local-first tools**
+**Built for professional developers and teams who prioritize code privacy, security, and quality**
+
+---
+
+## 📦 Repository
+
+**coderefine-ai** — AI-powered code review extension for VS Code

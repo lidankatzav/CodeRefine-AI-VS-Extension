@@ -16,7 +16,7 @@ interface LLMResponse {
 }
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log("Auto Code Improve active!");
+  console.log("CodeRefine extension activated");
 
   const disposable = vscode.commands.registerCommand(
     "auto-code-improve.suggestImprovements",
@@ -32,7 +32,7 @@ export function activate(context: vscode.ExtensionContext) {
       await vscode.window.withProgress(
         {
           location: vscode.ProgressLocation.Notification,
-          title: "Contacting Local LLM…",
+          title: "Analyzing code with AI…",
         },
         async () => {
           try {
@@ -44,7 +44,7 @@ export function activate(context: vscode.ExtensionContext) {
                 messages: [
                   {
                     role: "user",
-                    content: `Suggest improvements for this code:\n\n${code}`,
+                    content: `Analyze this code and provide professional improvement suggestions, focusing on best practices, performance, security, and maintainability:\n\n${code}`,
                   },
                 ],
               }),
@@ -56,7 +56,7 @@ export function activate(context: vscode.ExtensionContext) {
               reply.choices?.[0]?.message?.content ||
               "No suggestions received.";
 
-            vscode.window.showInformationMessage("Improvements received!");
+            vscode.window.showInformationMessage("Code analysis complete!");
 
             const doc = await vscode.workspace.openTextDocument({
               content: improved,
